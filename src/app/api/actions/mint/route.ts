@@ -73,7 +73,7 @@ export const POST = async (req: Request) => {
     }
     const connection = new Connection(clusterApiUrl("devnet"));
     const TO_PUBKEY = new PublicKey(
-      "9FK3BZiGatVrDwVZoMZsJQW24ETAmmzBAGPnJp9jSdtu",
+      "EHfocbgMwpUnTR9RixBNdFJRUmPiNvMYLHk3F9ikFBjc",
     );
     const transaction = new Transaction().add(
       SystemProgram.transfer({
