@@ -15,16 +15,17 @@ import {
 } from "@solana/web3.js";
 export const GET = async (req: Request) => {
   const payload: ActionGetResponse = {
-    icon: new URL("/img/nick.jpg", new URL(req.url).origin).toString(),
+    icon: new URL("/logo.png", new URL(req.url).origin).toString(),
     label: "Buy me a coffee",
     description:
-      "Buy me a coffee with SOL using this super sweet blink of mine :)",
-    title: "Nick Frostbutter - Buy Me a Coffee",
+      "I have been working for long, wanna tip me?",
+    title: "Dynamo- Wanna tip me? Use this sweet blink",
     links: {
       actions: [
         {
           href: "/api/actions/mint?amount=0.1",
           label: "0.1 SOL",
+
         },
         {
           href: "/api/actions/mint?amount=0.5",
